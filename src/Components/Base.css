@@ -1,0 +1,128 @@
+:root {
+    --Desaturated-Red: 0, 36%, 70%;
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+  
+    --Linear-one : hsl(0, 0%, 100%);
+    --Linear-two : hsl(0, 80%, 86%);
+  
+    --Linear-one-from : hsl(0, 100%, 98%);
+    --Lenar-two-from : hsl(0, 74%, 74%);
+
+  }
+
+  #root {
+    max-width: unset;
+    padding: unset;
+    margin: unset;
+    text-align: unset;
+    justify-content: unset;
+}
+  
+  * {
+      margin: 0;
+      box-sizing: border-box;
+  }
+  
+  html {
+      font-size: 16px;
+    }
+  .padb-2 {
+      padding-block: 2rem;
+    }
+
+  .mleft {
+    margin-left: 1.5rem;
+  }
+    
+  .input , html {
+      font-family: "Josefin Sans";
+  }
+  body {
+      color: hsl(var(--Desaturated-Red));
+      display: flex;
+      height: 100vh;
+      justify-content: space-between;
+      line-height: 1.1;
+  }
+  .container {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding:12rem;
+  }
+  
+  .item__container{
+      max-width: 442px;
+  }
+  
+  .highlighted-base {
+      font-size: 3.2rem;
+      letter-spacing: 1rem;
+      text-transform: uppercase;
+  }
+  
+  .pink__text {
+      font-weight: 300;
+  }
+  
+  .black__text {
+     color : var(--Dark-Grayish-Red);
+     font-weight: 700;
+  }
+  
+  .texts {
+      line-height: 2;
+  }
+  .input {
+      border: 0;
+      outline: 0;
+      padding:1.2rem;
+      border-radius: 100vw;
+  }
+
+  .submit.error {
+    z-index: -1;
+  }
+  
+  .form {
+    display: flex;
+    border: 1px solid hsl(var(--Desaturated-Red), 0.4);
+    border-radius: 100vw;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .input::placeholder {
+      color: hsl(var(--Desaturated-Red));
+  }
+
+  .submit {
+      background: linear-gradient(135deg , var(--Linear-two) 10%, var(--Lenar-two-from) 90%) ;
+      border-radius: 100vw;
+      border: 0;
+      box-shadow: -2px 50px 59px 0px rgba(0,0,0,0.19);
+      padding: 1rem 2.5rem;
+      cursor: pointer;
+  }
+
+  .submit:hover {
+    background : #facecf;
+  }
+  
+  .base__aparel {
+      padding-bottom: 5rem;
+  }
+  
+  .bg__container  {
+      position: absolute;
+      z-index: -1;
+  }
+
+  .error--text {
+    color: var(--Soft-Red);
+    font-size: 0.8rem;
+  }
+
+  .error--border {
+    border: 2px solid var(--Soft-Red);
+  }
